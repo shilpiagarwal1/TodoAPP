@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#e8e8e8"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:hint="Title"
+        android:ems="10">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/edit_title"
+        >
+        <requestFocus />
+    </EditText>
+    <DatePicker
+        android:id="@+id/edit_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_description"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        ></DatePicker>
+    <Button
+        android:id="@+id/update"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@id/edit_date"
+        android:text="Update"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/edit_cancel"
+
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/update"
+        android:layout_below="@id/edit_date"
+        android:text=" Cancel "
+
+        />
+
+</RelativeLayout>
